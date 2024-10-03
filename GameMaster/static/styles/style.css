@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --fonte-primaria: "Poppins", sans-serif;
+    --verde-escuro: #689452;
+    --verde-claro: #e3ffd7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--verde-claro);
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+h1 {
+    margin: 50px 0 30px;
+    color: var(--verde-escuro);
+    font-size: 40px;
+}
+
+p {
+    margin-bottom: 30px;
+
+}
+
+table {
+    margin: 30px auto;
+    width: 600px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+thead {
+    background-color: var(--verde-escuro);
+    color: #fff;
+}
+
+.conversor_label{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.conversor {
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px var(--verde-escuro);
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.resultado_imc{
+    margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao {
+    background-color: var(--verde-escuro);
+    color: white;
+}
+
+.limpar {
+    background-color: #db4242;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
